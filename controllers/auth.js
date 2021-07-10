@@ -14,7 +14,7 @@ const login = async(req, res = response) =>{
         
         if( !usuario ){
             return res.status(400).json({
-                msg: 'Usuario / Password no son correctos'
+                msg: 'Usuario / Password no son correctos - No hay usuario'
             })
         }
 
